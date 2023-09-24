@@ -116,7 +116,7 @@ export default function Player({
 
   const getYoutubemp3 = async (videoid) => {
     const response = await fetch(
-      `http://localhost:3000/fetchAudio?videoURL=https://www.youtube.com/watch?v=${videoid}`
+      `https://lofi-player-ey8q.onrender.com/fetchAudio?videoURL=https://www.youtube.com/watch?v=${videoid}`
     );
     const data = await response.json();
 
